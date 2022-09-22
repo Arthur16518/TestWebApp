@@ -2,6 +2,15 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{525355D7-61F2-4417-94C2-CB536EC01BD2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D81740F-9DB6-4503-BCA9-E9627EC32EC7}"
+	ProjectSection(SolutionItems) = preProject
+		Jenkinsfile = Jenkinsfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D3FADA5E-165E-4961-AF1C-DC6A3CD8B6E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{440E9229-FDD8-4C71-9611-150CD0F2542B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +21,12 @@ Global
 		{525355D7-61F2-4417-94C2-CB536EC01BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{525355D7-61F2-4417-94C2-CB536EC01BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{525355D7-61F2-4417-94C2-CB536EC01BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440E9229-FDD8-4C71-9611-150CD0F2542B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440E9229-FDD8-4C71-9611-150CD0F2542B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440E9229-FDD8-4C71-9611-150CD0F2542B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440E9229-FDD8-4C71-9611-150CD0F2542B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{440E9229-FDD8-4C71-9611-150CD0F2542B} = {D3FADA5E-165E-4961-AF1C-DC6A3CD8B6E0}
 	EndGlobalSection
 EndGlobal
