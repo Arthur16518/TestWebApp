@@ -4,10 +4,7 @@ pipeline {
     stages {
         stage('Unit tests') {
             steps {
-                withDotNet {             
-                    sh("ls");
-                    dotnetTest();
-                }
+                sh('dotnet test');
             }
         }
         stage('Build') {
