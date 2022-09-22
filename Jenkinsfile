@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Unit tests') {
             steps {
-                sh('dotnet test');
+                bat('dotnet test');
             }
         }
         stage('Build') {
