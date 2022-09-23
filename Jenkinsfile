@@ -5,7 +5,8 @@ pipeline {
         stage('Unit tests') {
             steps {
                 withDotNet() {   
-                    sh("dotnet test TestWebApp.sln -v q")
+                    sh(returnStdout: true, script: "dotnet --list-sdks")
+                    sh(returnStdout: true, script: "dotnet test TestWebApp.sln -v q")
                 }
             }
         }
