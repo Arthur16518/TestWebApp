@@ -4,9 +4,8 @@ pipeline {
     stages {
         stage('Unit tests') {
             steps {
-                echo 'Unit tests...'
                 withDotNet() {   
-                    sh 'dotnet test TestWebApp.sln -v q'
+                    sh("dotnet test TestWebApp.sln -v q")
                 }
             }
         }
