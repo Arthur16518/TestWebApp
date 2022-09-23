@@ -5,6 +5,7 @@ pipeline {
         stage('Unit tests') {
             steps {
                 echo 'Unit tests...'
+                sh 'find ~/ -name dotnet'
                 sh "dotnet test TestWebApp.sln -v q"
             }
         }
