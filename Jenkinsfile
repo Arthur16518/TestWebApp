@@ -1,23 +1,19 @@
 pipeline {
     agent any
-
     stages {
         stage('Unit tests') {
             steps {
-                withDotNet() {   
-                    sh(returnStdout: true, script: "dotnet --list-sdks")
-                    sh(returnStdout: true, script: "dotnet test TestWebApp.sln -v q")
-                }
+            sh("${tool 'dotnet6'}/dotnet test TestWebApp.sln")
             }
         }
         stage('Build') {
             steps {
-                echo 'Building...'
+            echo 'Building...'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+            echo 'Deploying....'
             }
         }
     }
