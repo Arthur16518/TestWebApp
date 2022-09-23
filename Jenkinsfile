@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Unit tests...'
                 withDotNet {   
-                    dotnetTest project: 'TestWebApp.sln'
+                    sh 'dotnet test TestWebApp.sln -v q'
                 }
             }
         }
