@@ -8,9 +8,9 @@ public class UnitTest1
         Assert.Equal(true, true);
     }
 
-    // [Fact]
-    // public void Test2()
-    // {
-    //     Assert.Equal(true, false);
-    // }
+    [Fact]
+    public void Test2()
+    {
+        Assert.Equal(true, false);
+    }
 }
