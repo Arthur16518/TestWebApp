@@ -5,7 +5,9 @@ pipeline {
         stage('Unit tests') {
             steps {
                 echo 'Unit tests...'
-                dotnetTest project: 'TestWebApp.sln'
+                withDotNet {   
+                    dotnetTest project: 'TestWebApp.sln'
+                }
             }
         }
         stage('Build') {
